@@ -12,7 +12,6 @@ const Square = ({ value, onSquareClick }) => {
 };
 
 function TicTac() {
-  const isMobile = {};
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [nextPerson, setNextPerson] = useState(false);
 

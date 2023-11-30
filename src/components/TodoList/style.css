@@ -1,0 +1,33 @@
+.todo {
+  position: absolute;
+  width: 25%;
+  top: 100px;
+  right: 15%;
+  margin-right: 20px;
+  animation: slideTo 2.5s linear 1;
+}
+.list-items {
+  min-height: 200px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+@keyframes slideTo {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .todo {
+    width: 90%;
+    position: static;
+    margin: 20px;
+  }
+}

@@ -1,0 +1,76 @@
+.calculator {
+  margin-top: 20px;
+  height: 600px;
+  width: 380px;
+
+  border: solid 2px aqua;
+  border-radius: 2%;
+  animation: SlideInLeft 1s ease-out 1;
+}
+
+@keyframes SlideInLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.display {
+  height: 30%;
+  margin: 10px;
+  border: solid 1px rgb(130, 220, 238);
+  word-wrap: break-word;
+}
+.insert {
+  margin: 10px;
+  height: 66%;
+}
+.other-buttons {
+  height: 18%;
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  column-gap: 5px;
+  row-gap: 3px;
+  justify-content: center;
+}
+
+.number-container {
+  margin-top: 2px;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 3px;
+  row-gap: 3px;
+  justify-content: center;
+}
+.number {
+  background-color: rgb(55, 212, 223);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+}
+.number:hover {
+  background-color: rgb(129, 221, 190);
+}
+
+button {
+  color: azure;
+  font-size: large;
+  border-radius: 20%;
+}
+
+@media screen and (max-width: 769px) {
+  .calculator {
+    margin: 20px;
+    height: 400px;
+  }
+  .display {
+    height: 20%;
+  }
+  .insert {
+    margin: 10px;
+    height: 75%;
+  }
+}

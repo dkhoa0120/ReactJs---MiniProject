@@ -1,0 +1,51 @@
+.square {
+  height: 100px;
+  width: 100px;
+  border: 1px solid wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+.board {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.game {
+  display: flex;
+}
+.restart-btn-mobile {
+  display: none;
+}
+.tictac {
+  animation: slideInLeft 1.5s ease-out 1;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .tictac {
+    margin: 30px;
+    height: 580px;
+  }
+  .restart-btn-pc {
+    display: none;
+  }
+  .status {
+    display: inline-block;
+  }
+  .restart-btn-mobile {
+    display: inline-block;
+    margin-left: 100px;
+  }
+  .game {
+    margin-top: 20px;
+  }
+}
